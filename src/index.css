@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", "sans-serif";
+  
+  /* Custom Colors from your design */
+  --color-primary: #ec4899;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #101622;
+}
+
+/* Base styles to match the body tag in HTML */
+body {
+  @apply bg-background-light text-gray-900 font-display;
+}
