@@ -11,7 +11,8 @@ function Home() {
       <Navbar />
       
       {/* 2. Main Content Area */}
-      <main className="flex-1 flex flex-col items-center w-full">
+      <main className="flex-1 flex flex-col w-full">
+
         
         {/* The "About Me" / Intro Section */}
         <Hero />
