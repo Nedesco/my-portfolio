@@ -8,7 +8,7 @@ export default function Footer() {
               <span className="material-symbols-outlined">design_services</span>
             </div>
             <h2 className="text-lg font-bold leading-tight">
-              C. Ned-Onuoha Design
+              C. Ned-Onuoha Code
             </h2>
           </div>
           <p className="text-[#4b5563] text-sm max-w-xs">
