@@ -10,7 +10,7 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
       }} 
       >
-    <div className="w-full max-w-[1280px] px-6 lg:px-10 py-12 lg:py-24 mx-auto">
+    <div id="about" className="w-full max-w-[1280px] px-6 lg:px-10 py-12 lg:py-24 mx-auto">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
         
         {/* Left Content */}
@@ -31,7 +31,7 @@ export default function Hero() {
           
 
           <div className="flex flex-wrap gap-4 mt-4 w-full sm:w-auto">
-            <a href="#projects" className="flex flex-1 sm:flex-none cursor-pointer items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary hover:bg-pink-700 hover:shadow-xl hover:-translate-y-0.5 transition-all text-white text-base font-bold shadow-lg shadow-primary/25">
+            <a href="#projects" className="flex flex-1 sm:flex-none cursor-pointer items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary hover:bg-[color:var(--color-primary-dark)] hover:shadow-xl hover:-translate-y-0.5 transition-all text-white text-base font-bold shadow-lg shadow-primary/25">
               <span className="truncate">View Projects</span>
               <span className="material-symbols-outlined text-[20px]">arrow_downward</span>
             </a>

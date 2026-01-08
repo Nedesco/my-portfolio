@@ -1,22 +1,23 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import ContactCTA from './components/ContactCTA';
+
 
 function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background-light text-gray-900 font-display">
-      
       {/* 1. Navigation Bar */}
       <Navbar />
-      
+
       {/* 2. Main Content Area */}
       <main className="flex-1 flex flex-col w-full">
-
-        
         {/* The "About Me" / Intro Section */}
-        <Hero />
-        
+        <div className="animate-fade-up">
+          <Hero />
+        </div>
+
         {/* Optional: Trusted Brands / Logos Section (Matches your design) */}
         <div className="w-full bg-white border-y border-[#e7ebf3] py-10">
           <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-center">
@@ -25,22 +26,23 @@ function Home() {
             </h4>
             {/* Simple Tech Stack Icons */}
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 text-gray-400 font-bold text-xl">
-               <span>REACT</span>
-               <span>TAILWIND</span>
-               <span>JAVASCRIPT</span>
-               <span>VITE</span>
+              <span>REACT</span>
+              <span>TAILWIND</span>
+              <span>JAVASCRIPT</span>
+              <span>VITE</span>
             </div>
           </div>
         </div>
 
         {/* The List of Projects */}
         <Projects />
-      
       </main>
+      <div className="w-full h-16 bg-gradient-to-b from-white to-[color:var(--color-primary-soft)]"></div>
 
+      {/* <div className="w-full h-px bg-gradient-to-r from-transparent via-[color:var(--color-primary)]/40 to-transparent"></div> */}
+      <ContactCTA/>
       {/* 3. Footer / Contact Section */}
       <Footer />
-    
     </div>
   );
 }

@@ -1,15 +1,43 @@
 @import "tailwindcss";
 
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+
 @theme {
   --font-display: "Inter", "sans-serif";
   
   /* Custom Colors from your design */
-  --color-primary: #ec4899;
+   --color-primary: #400c4c;
   --color-background-light: #f6f6f8;
-  --color-background-dark: #101622;
+  --color-background-dark: #101622; 
+
+
+}
+  :root {
+  --color-primary: #400c4c;
+  --color-primary-dark: #2a0832;
+  --color-primary-light: #6a2b78;
+  --color-primary-soft: #f4edf6;
 }
 
 /* Base styles to match the body tag in HTML */
 body {
   @apply bg-background-light text-gray-900 font-display;
+}
+
+html {
+  scroll-behavior: smooth;
 }
