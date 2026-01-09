@@ -64,25 +64,38 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden w-full bg-white border-t border-[#e7ebf3]">
-          <div className="flex flex-col items-center gap-6 py-6">
-            <a
-              href="#projects"
-              onClick={() => setIsOpen(false)}
-              className="font-bold text-[#0d121b]"
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="font-bold text-[#0d121b]"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      )}
+  <div className="md:hidden w-full bg-white border-t border-[#e7ebf3]">
+    <div className="flex flex-col items-center gap-6 py-6 text-[#0d121b] font-bold">
+      
+      <a
+        href="#about"
+        onClick={() => setIsOpen(false)}
+        className="hover:text-primary transition-colors"
+      >
+        About
+      </a>
+
+      <a
+        href="#projects"
+        onClick={() => setIsOpen(false)}
+        className="hover:text-primary transition-colors"
+      >
+        Projects
+      </a>
+
+      <a
+        href="#contact"
+        onClick={() => setIsOpen(false)}
+        className="hover:text-primary transition-colors"
+      >
+        Contact
+      </a>
+
+    </div>
+  </div>
+)}
+
+    
 
     </header>
   );
